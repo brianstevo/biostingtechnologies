@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="style.css">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./Biosting_final_logo.jpg"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Bio Sting Technologies</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<img class="logo" src="./Biosting_final_logo.jpg" alt="" />
+					<ul id="nav-ul" class="">
+						<li><a class="nav-link" href="./index.html">About</a></li>
+						<li><a class="nav-link" href="./services.html">Services</a></li>
+						<li><a class="nav-link" href="./customer.html">Customers</a></li>
+						<li><a class="nav-link" href="./contact.html">Projects</a></li>
+					</ul>
+					<div class="hamburger">
+						<img id="menu-icon" class="" src="images/icon-hamburger.svg" />
+						<img id="xtimes" class="hide" src="images/icon-close.svg" alt="" />
+					</div>
+					<a href="./contact.html" class="button hide">Contact Us</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+            <div class="main-container">
+                <div class="left">
+                    <div class="contact-icon">
+                        <i class="far fa-envelope"></i>
+                    <span>contactus@biostingtechnologies.com</span></div>
+                    <div class="address-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="address-text">
+                            <h4>Head office</h4>
+                                <p>The courtyard, Door no 3-132 II (2), Padubidri, Udupi-574111, Karnataka, India.</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="right">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Phone">
+                        <input type="text" placeholder="Subject">
+                        <textarea id="story" name="story" rows="5" cols="33">
+                        </textarea>
+                        <!-- <textarea rows="4" cols="50" placeholder="Message"></textarea> -->
+                        <input class="button-contact mg-tp" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+		<footer>
+			<div class="footer">
+				<div class="footer-title">
+					<h3>Contact Info</h3>
+				</div>
+				<div class="footer-content">
+				   <p><a href="mailto:biostingtechnologies@gmail.com" target="_blank">contactus@biostingtechnologies.com</a></p> 
+				   <p><a href="http://www.biostingtechnologies.com" target="_blank">www.biostingtechnologies.com</a></p> 
+				   <p><a href="tel:+917259183260">Mobile: +917259183260</a></p>
+				</div>
+				
+			</div>
+	
+			<div class="bottom">Copyright © 2020 Bio Sting Technologies. All rights reserved /div>
+		</footer>
+	</body>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const menuicon = document.querySelector('#menu-icon');
+		const xtimes = document.querySelector('#xtimes');
+		const navul = document.querySelector('#nav-ul');
+
+		function toggleClass() {
+			menuicon.classList.toggle('hide');
+			xtimes.classList.toggle('hide');
+			navul.classList.toggle('show');
+		}
+		hamburger.addEventListener('click', toggleClass);
+	</script>
+</html>

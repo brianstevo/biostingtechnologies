@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="style.css">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./Biosting_final_logo.jpg"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Bio Sting Technologies</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<img class="logo" src="./Biosting_final_logo.jpg" alt="" />
+					<ul id="nav-ul" class="">
+						<li><a class="nav-link" href="./index.html">About</a></li>
+						<li><a class="nav-link" href="./services.html">Services</a></li>
+						<li><a class="nav-link" href="./customer.html">Customers</a></li>
+						<li><a class="nav-link" href="./contact.html">Projects</a></li>
+					</ul>
+					<div class="hamburger">
+						<img id="menu-icon" class="" src="images/icon-hamburger.svg" />
+						<img id="xtimes" class="hide" src="images/icon-close.svg" alt="" />
+					</div>
+					<a href="./contact.html" class="button hide">Contact Us</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section id="mission">
+				<h3 class="timeline-h">About Us</h3>
+				<h3 class="mission-h">Vision</h3>
+					<p class="mission-p">To provide high impact eco-friendly
+					infra-structure/IT-solutions for health care sectors</p>
+					<hr>
+				<h3 class="mission-h">Mission</h3>
+					<p class="mission-p">
+					<span class="mb">To design, commission, and maintain state of art
+					infrastructure to high priority areas in hospitals, medical
+					laboratories and pharma industries.</span>
+					
+					<span>To develop and maintain end to end electronic medical
+						records for hospitals and laboratories.</span>
+					</p>	
+					<hr>
+			</section>
+			<section id="time">
+				<h3 class="timeline-h">Our History</h3>
+			<ul class="timeline">
+				<!-- Item 1 -->
+				<li>
+				  <div class="direction-r">
+					<div class="flag-wrapper">
+					  <span class="hexa"></span>
+					  <!-- <span class="flag">PiLLAR9 TAE India Established</span> -->
+					  <span class="time-wrapper"><span class="time">2012</span></span>
+					</div>
+					<div class="desc">PiLLAR9 TAE India Established</div>
+				  </div>
+				</li>
+				<li>
+					<div class="direction-l">
+					  <div class="flag-wrapper">
+						<span class="hexa"></span>
+						<!-- <span class="flag"></span> -->
+						<span class="time-wrapper"><span class="time">2013</span></span>
+					  </div>
+					  <div class="desc">Technical Support From NMAMIT, Nitte</div>
+					</div>
+				  </li>
+				<!-- Item 2 -->
+				<li>
+				  <div class="direction-r">
+					<div class="flag-wrapper">
+					  <span class="hexa"></span>
+					  <!-- <span class="flag"></span> -->
+					  <span class="time-wrapper"><span class="time">2014</span></span>
+					</div>
+					<div class="desc">Business Expanded and Launched new services by outsourcing</div>
+				  </div>
+				</li>
+			  
+				<!-- Item 3 -->
+				<li>
+				  <div class="direction-l">
+					<div class="flag-wrapper">
+					  <span class="hexa"></span>
+					  <!-- <span class="flag"></span> -->
+					  <span class="time-wrapper"><span class="time">2019</span></span>
+					</div>
+					<div class="desc">Bio Sting Technologies Established by professors from the Dept of Mech, Engg, NMAMIT, Nitte</div>
+				  </div>
+				</li>
+			  </ul>
+			</section>
+			
+		</main>
+		<footer>
+			<div class="footer">
+				<div class="footer-title">
+					<h3>Contact Info</h3>
+				</div>
+				<div class="footer-content">
+				   <p><a href="mailto:biostingtechnologies@gmail.com" target="_blank">contactus@biostingtechnologies.com</a></p> 
+				   <p><a href="http://www.biostingtechnologies.com" target="_blank">www.biostingtechnologies.com</a></p> 
+				   <p><a href="tel:+917259183260">Mobile: +917259183260</a></p>
+				</div>
+				
+			</div>
+	
+			<div class="bottom">Copyright © 2020 Bio Sting Technologies. All rights reserved /div>
+		</footer>
+	</body>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const menuicon = document.querySelector('#menu-icon');
+		const xtimes = document.querySelector('#xtimes');
+		const navul = document.querySelector('#nav-ul');
+
+		function toggleClass() {
+			menuicon.classList.toggle('hide');
+			xtimes.classList.toggle('hide');
+			navul.classList.toggle('show');
+		}
+		hamburger.addEventListener('click', toggleClass);
+	</script>
+</html>

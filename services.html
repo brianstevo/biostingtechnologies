@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="style.css">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./Biosting_final_logo.jpg"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Bio Sting Technologies</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<img class="logo" src="./Biosting_final_logo.jpg" alt="" />
+					<ul id="nav-ul" class="">
+						<li><a class="nav-link" href="./index.html">About</a></li>
+						<!-- <li><a class="nav-link" href="">About</a></li> -->
+						<li><a class="nav-link" href="./services.html">Services</a></li>
+						<li><a class="nav-link" href="./customer.html">Customers</a></li>
+						<li><a class="nav-link" href="./contact.html">Projects</a></li>
+					</ul>
+					<div class="hamburger">
+						<img id="menu-icon" class="" src="images/icon-hamburger.svg" />
+						<img id="xtimes" class="hide" src="images/icon-close.svg" alt="" />
+					</div>
+					<a href="./contact.html" class="button hide">Contact Us</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+            <section id="card">
+				<div class="container">
+					<div class="card-header">
+						<h2>Why choose Bio-Sting Technologies?</h2>
+						<p>
+							Bio-Sting Technologies a techno-commercial agency headed by well-experienced Engineers, has
+been established on the perpetual concern for global health and safety in medical and bio hazard
+areas.
+						</p>
+					</div>
+					<div class="grid">
+						<div class="glutter-grid">
+							<div class="col4 md1">
+								<div class="grid-content">
+									<p>
+										Establishing, commissioning and validation of biosaftey laboratories (BSL)
+									</p>
+								</div>
+							</div>
+							<div class="col4 md1">
+								<div class="grid-content">
+									<p>
+										Providing centralized air conditioning system (HVAC)
+									</p>
+								</div>
+							</div>
+							<div class="col4 md1">
+								<div class="grid-content">
+									<p>
+										Providing non conventional energy equipments
+									</p>
+								</div>
+							</div>
+							<div class="col4 md1">
+								<div class="grid-content">
+									<p>
+										Supplying biosafety cabinets
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="service">
+                <!-- <div class="s-container">
+                    <div class="service-card" data-name="01">
+                        <h2>cold storage</h2>               
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisd tempor incididunt ut labore et dolore </p>
+                    </div>
+                </div> -->
+				<div class="grid-container">
+					<h3 class="grid-h">Our Services</h3>
+					<div class="sglutter-grid">
+						<div class="scell scol3 smd3">
+							<div class="service-card" data-name="01">
+								<h2>cold room</h2>               
+								<p>Lorem ipsum dolor sit amet, consectetur adipisd</p>
+							</div>
+						</div>
+						<div class="scell scol3 smd3">
+							<div class="service-card" data-name="02">
+								<h2>Biological
+									Safety Level
+									Labs</h2>               
+								<p>Lorem ipsum dolor sit amet, consectetur adipisd </p>
+							</div>
+						</div>
+						<div class="scell scol3 smd3">
+							<div class="service-card" data-name="03">
+								<h2>Incubator</h2>               
+								<p>Lorem ipsum dolor sit amet, consectetur adipisd</p>
+							</div>
+						</div>
+						<div class="scell scol3 smd3">
+							<div class="service-card" data-name="04">
+								<h2>Intensive
+									Care Unit
+									(ICU)</h2>               
+								<p>Lorem ipsum dolor sit amet, consectetur adipisd</p>
+							</div>
+						</div>
+						<div class="scell scol3 smd3">
+							<div class="service-card" data-name="05">
+								<h2>clean rooms</h2>               
+								<p>Lorem ipsum dolor sit amet, consectetur adipisd</p>
+							</div>
+						</div>
+						<div class="scell scol3 smd3">
+							<div class="service-card" data-name="06">
+								<h2>Modular
+									Operation Theater</h2>               
+								<p>Lorem ipsum dolor sit amet, consectetur adipisd</p>
+							</div>
+						</div>
+					</div> 
+				</div>
+            </section>
+		</main>
+		<footer>
+			<div class="footer">
+				<div class="footer-title">
+					<h3>Contact Info</h3>
+				</div>
+				<div class="footer-content">
+				   <p><a href="mailto:biostingtechnologies@gmail.com" target="_blank">contactus@biostingtechnologies.com</a></p> 
+				   <p><a href="http://www.biostingtechnologies.com" target="_blank">www.biostingtechnologies.com</a></p> 
+				   <p><a href="tel:+917259183260">Mobile: +917259183260</a></p>
+				</div>
+				
+			</div>
+	
+			<div class="bottom">Copyright © 2020 Bio Sting Technologies. All rights reserved /div>
+		</footer>
+	</body>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const menuicon = document.querySelector('#menu-icon');
+		const xtimes = document.querySelector('#xtimes');
+		const navul = document.querySelector('#nav-ul');
+
+		function toggleClass() {
+			menuicon.classList.toggle('hide');
+			xtimes.classList.toggle('hide');
+			navul.classList.toggle('show');
+		}
+		hamburger.addEventListener('click', toggleClass);
+	</script>
+</html>
